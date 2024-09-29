@@ -55,49 +55,49 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Initialize the first slide
     showSlide(0);
-
-    // Add to Cart functionality
-    function addToCart(button) {
-        const box = button.closest('.box'); // Target the closest box to the button
-
-        // Extract price and remove the currency symbol for correct parsing
-        const priceText = box.querySelector('.price').textContent;
-        const price = parseFloat(priceText.replace('₹', '').replace('/-', '').trim());
-
-        // Extract size and handle the case when no size is selected
-        const size = box.querySelector('input[type="radio"]:checked')?.value || 'Not selected';
-
-        if (size === 'Not selected') {
-            alert('Please select a size');
-            return;
-        }
-
-        // Create the item object
-        const item = {
-            name: box.querySelector('h3').textContent,
-            price: price,
-            size: size,
-            image: box.querySelector('.item-image').src,
-            quantity: 1 // Default quantity
-        };
-
-        // Retrieve existing cart from localStorage
-        let cart = JSON.parse(localStorage.getItem('cart')) || [];
-
-        // Check if the item already exists in the cart
-        const existingItemIndex = cart.findIndex(cartItem => cartItem.name === item.name && cartItem.size === item.size);
-        
-        if (existingItemIndex > -1) {
-            // If item exists, update the quantity
-            cart[existingItemIndex].quantity += 1;
-        } else {
-            // If item doesn't exist, add it to the cart
-            cart.push(item);
-        }
-
-        // Save the updated cart to localStorage
-        localStorage.setItem('cart', JSON.stringify(cart));
-
-        alert(`Added to cart:\n${item.name}\nPrice: ₹${price}\nSize: ${size}`);
-    }
 });
+
+// Add to Cart functionality
+function addToCart(button) {
+    const box = button.closest('.box'); // Target the closest box to the button
+
+    // Extract price and remove the currency symbol for correct parsing
+    const priceText = box.querySelector('.price').textContent;
+    const price = parseFloat(priceText.replace('₹', '').replace('/-', '').trim());
+
+    // Extract size and handle the case when no size is selected
+    const size = box.querySelector('input[type="radio"]:checked')?.value || 'Not selected';
+
+    if (size === 'Not selected') {
+        alert('Please select a size');
+        return;
+    }
+
+    // Create the item object
+    const item = {
+        name: box.querySelector('h3').textContent,
+        price: price,
+        size: size,
+        image: box.querySelector('.item-image').src,
+        quantity: 1 // Default quantity
+    };
+
+    // Retrieve existing cart from localStorage
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    // Check if the item already exists in the cart
+    const existingItemIndex = cart.findIndex(cartItem => cartItem.name === item.name && cartItem.size === item.size);
+
+    if (existingItemIndex > -1) {
+        // If item exists, update the quantity
+        cart[existingItemIndex].quantity += 1;
+    } else {
+        // If item doesn't exist, add it to the cart
+        cart.push(item);
+    }
+
+    // Save the updated cart to localStorage
+    localStorage.setItem('cart', JSON.stringify(cart));
+
+    alert(`Added to cart:\n${item.name}\nPrice: ₹${price}\nSize: ${size}`);
+}
