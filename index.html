@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <title>Be Fit</title>
+</head>
+<body>
+    
+    <!-- Header and Navbar -->
+    <header>
+        <div class="nav-bar">
+            <div class="logo">
+                <h1>Be Fit   </h1>
+            </div>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="#men">Men</a></li>
+                    <li><a href="#women">Women</a></li>
+                    <li><a href="#aboutus">About Us</a></li>
+                    <li><a href="#contactus">Contact Us</a></li>
+                    <li><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </nav>
+            <div class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+   <!-- Carousel Section -->
+<div class="carousel">
+    <div class="carousel-videos">
+        <video src="video3.mp4" class="slides" alt="Video 3" muted></video>
+        <video src="video2.mp4" class="slides" alt="Video 2" muted></video>
+        <video src="video4.mp4" class="slides" alt="Video 4" muted></video>
+        <video src="video5.mp4" class="slides" alt="Video 1" muted></video>
+    </div>
+    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    <div class="carousel-text">
+        <h2>Give your workout<br> A New Style! , with our FITS . . .</h2>
+    </div>
+</div>
+
+
+    <!-- New Container Section -->
+    <div class="new-container">
+        <h2>Best Deals on Gym Clothing</h2><br>
+        <p>"Unleash Your Inner Athlete" with Gear Designed to Move with You,
+            Featuring a Range of Trunks, T-Shirts, Leggings, and More..</p><br>
+            <a href="cart.html" class="btn">Shop Now</a>
+
+    </div>
+
+    <!-- Sections -->
+    <section id="men">
+        <center><h2>Men's Section</h2></center>
+        <div class="mens-container">
+            <!-- Box 1 -->
+            <div class="box">
+                <img src="promen1.jpg" alt="Item Image" class="item-image">
+                <h3>Spiderman Compression T-shirt</h3>
+                <p class="price">&#x20b9; 630/-</p>
+                <p class="rating">★★★★☆</p>
+                <div class="size-options">
+                    <label><input type="radio" name="size1" value="S"> S</label>
+                    <label><input type="radio" name="size1" value="M"> M</label>
+                    <label><input type="radio" name="size1" value="L"> L</label>
+                    <label><input type="radio" name="size1" value="XL"> XL</label>
+                    <label><input type="radio" name="size1" value="XXL"> XXL</label>
+                </div>
+                <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+    
+            <!-- Box 2 -->
+            <div class="box">
+                <img src="promen2.jpg" alt="Item Image" class="item-image">
+                <h3>White Zipper and Shorts</h3>
+                <p class="price">&#x20b9; 1530/-</p>
+                <p class="rating">★★★☆☆</p>
+                <div class="size-options">
+                    <label><input type="radio" name="size2" value="S"> S</label>
+                    <label><input type="radio" name="size2" value="M"> M</label>
+                    <label><input type="radio" name="size2" value="L"> L</label>
+                    <label><input type="radio" name="size2" value="XL"> XL</label>
+                    <label><input type="radio" name="size2" value="XXL"> XXL</label>
+                </div>
+                <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+    
+            <!-- Box 3 -->
+            <div class="box">
+                <img src="promen3.jpg" alt="Item Image" class="item-image">
+                <h3>Grey half sleeve Hoodie</h3>
+                <p class="price">&#x20b9; 560/-</p>
+                <p class="rating">★★★★☆</p>
+                <div class="size-options">
+                    <label><input type="radio" name="size3" value="S"> S</label>
+                    <label><input type="radio" name="size3" value="M"> M</label>
+                    <label><input type="radio" name="size3" value="L"> L</label>
+                    <label><input type="radio" name="size3" value="XL"> XL</label>
+                    <label><input type="radio" name="size3" value="XXL"> XXL</label>
+                </div>
+                <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+    
+            <!-- Box 4 -->
+            <div class="box">
+                <img src="promen4.jpg" alt="Item Image" class="item-image">
+                <h3>Sweat Shorts</h3>
+                <p class="price">&#x20b9; 389/-</p>
+                <p class="rating">★★☆☆☆</p>
+                <div class="size-options">
+                    <label><input type="radio" name="size4" value="S"> S</label>
+                    <label><input type="radio" name="size4" value="M"> M</label>
+                    <label><input type="radio" name="size4" value="L"> L</label>
+                    <label><input type="radio" name="size4" value="XL"> XL</label>
+                    <label><input type="radio" name="size4" value="XXL"> XXL</label>
+                </div>
+                <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+    
+            <!-- Box 5 -->
+            <div class="box">
+                <img src="promen5.jpg" alt="Item Image" class="item-image">
+                <h3>E-Z Trackpant</h3>
+                <p class="price">&#x20b9; 780/-</p>
+                <p class="rating">★★★★☆</p>
+                <div class="size-options">
+                    <label><input type="radio" name="size5" value="S"> S</label>
+                    <label><input type="radio" name="size5" value="M"> M</label>
+                    <label><input type="radio" name="size5" value="L"> L</label>
+                    <label><input type="radio" name="size5" value="XL"> XL</label>
+                    <label><input type="radio" name="size5" value="XXL"> XXL</label>
+                </div>
+                <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+    
+            <!-- Box 6 -->
+            <div class="box">
+                <img src="promen6.jpg" alt="Item Image" class="item-image">
+                <h3>Gymish T-shirt</h3>
+                <p class="price">&#x20b9; 450/-</p>
+                <p class="rating">★★★☆☆</p>
+                <div class="size-options">
+                    <label><input type="radio" name="size6" value="S"> S</label>
+                    <label><input type="radio" name="size6" value="M"> M</label>
+                    <label><input type="radio" name="size6" value="L"> L</label>
+                    <label><input type="radio" name="size6" value="XL"> XL</label>
+                    <label><input type="radio" name="size6" value="XXL"> XXL</label>
+                </div>
+                <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+    
+            <!-- Box 7 -->
+            <div class="box">
+                <img src="promen7.jpg" alt="Item Image" class="item-image">
+                <h3>Browny oversized T-shirt</h3>
+                <p class="price">&#x20b9; 900/-</p>
+                <p class="rating">★★★☆☆</p>
+                <div class="size-options">
+                    <label><input type="radio" name="size7" value="S"> S</label>
+                    <label><input type="radio" name="size7" value="M"> M</label>
+                    <label><input type="radio" name="size7" value="L"> L</label>
+                    <label><input type="radio" name="size7" value="XL"> XL</label>
+                    <label><input type="radio" name="size7" value="XXL"> XXL</label>
+                </div>
+                <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+    
+            <!-- Box 8 -->
+            <div class="box">
+                <img src="promen8.jpg" alt="Item Image" class="item-image">
+                <h3>Gym rat white Hoodie</h3>
+                <p class="price">&#x20b9; 780/-</p>
+                <p class="rating">★★★☆☆</p>
+                <div class="size-options">
+                    <label><input type="radio" name="size8" value="S"> S</label>
+                    <label><input type="radio" name="size8" value="M"> M</label>
+                    <label><input type="radio" name="size8" value="L"> L</label>
+                    <label><input type="radio" name="size8" value="XL"> XL</label>
+                    <label><input type="radio" name="size8" value="XXL"> XXL</label>
+                </div>
+                <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+    
+            <!-- Box 9 -->
+            <div class="box">
+                <img src="promen9.jpg" alt="Item Image" class="item-image">
+                <h3>Altox Trackpant</h3>
+                <p class="price">&#x20b9; 2020/-</p>
+                <p class="rating">★★★★☆</p>
+                <div class="size-options">
+                    <label><input type="radio" name="size9" value="S"> S</label>
+                    <label><input type="radio" name="size9" value="M"> M</label>
+                    <label><input type="radio" name="size9" value="L"> L</label>
+                    <label><input type="radio" name="size9" value="XL"> XL</label>
+                    <label><input type="radio" name="size9" value="XXL"> XXL</label>
+                </div>
+                <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+    
+            <!-- Box 10 -->
+            <div class="box">
+                <img src="promen10.jpg" alt="Item Image" class="item-image">
+                <h3>Double pocket Trackpant</h3>
+                <p class="price">&#x20b9; 592/-</p>
+                <p class="rating">★★★★☆</p>
+                <div class="size-options">
+                    <label><input type="radio" name="size10" value="S"> S</label>
+                    <label><input type="radio" name="size10" value="M"> M</label>
+                    <label><input type="radio" name="size10" value="L"> L</label>
+                    <label><input type="radio" name="size10" value="XL"> XL</label>
+                    <label><input type="radio" name="size10" value="XXL"> XXL</label>
+                </div>
+                <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="box">
+                <img src="displaymen1.jpg" alt="Item Image" class="item-image">
+                <h3>Sets of 3 Compreesion </h3>
+                <p class="price">&#x20b9; 1500/-</p>
+                <p class="rating">★★★★☆</p>
+                <div class="size-options">
+                    <label><input type="radio" name="size10" value="S"> S</label>
+                    <label><input type="radio" name="size10" value="M"> M</label>
+                    <label><input type="radio" name="size10" value="L"> L</label>
+                    <label><input type="radio" name="size10" value="XL"> XL</label>
+                    <label><input type="radio" name="size10" value="XXL"> XXL</label>
+                </div>
+                <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+         
+              <!-- Box 12 -->
+              <div class="box">
+                
+                <img src="displaymen2.jpg" alt="Item Image" class="item-image">
+                <h3>Sets of 4 oversized T-shirts</h3>
+                <p class="price">&#x20b9; 1800/-</p>
+                <p class="rating">★★★★☆</p>
+                <div class="size-options">
+                    <label><input type="radio" name="size10" value="S"> S</label>
+                    <label><input type="radio" name="size10" value="M"> M</label>
+                    <label><input type="radio" name="size10" value="L"> L</label>
+                    <label><input type="radio" name="size10" value="XL"> XL</label>
+                    <label><input type="radio" name="size10" value="XXL"> XXL</label>
+                </div>
+                <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+             </div>
+    </section>
+      
+
+    <section id="women">
+        <center><h2>Women's Section</h2></center>
+        <div class="womens-container">
+            <!-- Box 1 -->
+            <div class="box">
+                <img src="displaywomen2.jpg" alt="Item Image" class="item-image">
+                <h3>BCZ oversized T-shirt</h3>
+                <p class="price">&#x20b9; 480/-</p>
+                <p class="rating">★★★★☆</p>
+                <div class="size-options">
+                    <label><input type="radio" name="size1" value="S"> S</label>
+                    <label><input type="radio" name="size1" value="M"> M</label>
+                    <label><input type="radio" name="size1" value="L"> L</label>
+                    <label><input type="radio" name="size1" value="XL"> XL</label>
+                    <label><input type="radio" name="size1" value="XXL"> XXL</label>
+                </div>
+                <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+    
+            <!-- Box 2 -->
+            <div class="box">
+                <img src="prowomen6.jpg" alt="Item Image" class="item-image">
+                <h3>Booter Sports Bra</h3>
+                <p class="price">&#x20b9; 390/-</p>
+                <p class="rating">★★★☆☆</p>
+                <div class="size-options">
+                    <label><input type="radio" name="size2" value="S"> S</label>
+                    <label><input type="radio" name="size2" value="M"> M</label>
+                    <label><input type="radio" name="size2" value="L"> L</label>
+                    <label><input type="radio" name="size2" value="XL"> XL</label>
+                    <label><input type="radio" name="size2" value="XXL"> XXL</label>
+                </div>
+                <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+    
+            <!-- Box 3 -->
+            <div class="box">
+                <img src="prowomen3.jpg" alt="Item Image" class="item-image">
+                <h3>Lined Shorts</h3>
+                <p class="price">&#x20b9; 299/-</p>
+                <p class="rating">★★★★☆</p>
+                <div class="size-options">
+                    <label><input type="radio" name="size3" value="S"> S</label>
+                    <label><input type="radio" name="size3" value="M"> M</label>
+                    <label><input type="radio" name="size3" value="L"> L</label>
+                    <label><input type="radio" name="size3" value="XL"> XL</label>
+                    <label><input type="radio" name="size3" value="XXL"> XXL</label>
+                </div>
+                <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+    
+            <!-- Box 4 -->
+            <div class="box">
+                <img src="prowomen4.jpg" alt="Item Image" class="item-image">
+                <h3>Grey oversized T-shirt</h3>
+                <p class="price">&#x20b9; 530/-</p>
+                <p class="rating">★★☆☆☆</p>
+                <div class="size-options">
+                    <label><input type="radio" name="size4" value="S"> S</label>
+                    <label><input type="radio" name="size4" value="M"> M</label>
+                    <label><input type="radio" name="size4" value="L"> L</label>
+                    <label><input type="radio" name="size4" value="XL"> XL</label>
+                    <label><input type="radio" name="size4" value="XXL"> XXL</label>
+                </div>
+                <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+    
+            <!-- Box 5 -->
+            <div class="box">
+                <img src="prowomen5.jpg" alt="Item Image" class="item-image">
+                <h3>Modest Bodywear</h3>
+                <p class="price">&#x20b9; 1400/-</p>
+                <p class="rating">★★★★☆</p>
+                <div class="size-options">
+                    <label><input type="radio" name="size5" value="S"> S</label>
+                    <label><input type="radio" name="size5" value="M"> M</label>
+                    <label><input type="radio" name="size5" value="L"> L</label>
+                    <label><input type="radio" name="size5" value="XL"> XL</label>
+                    <label><input type="radio" name="size5" value="XXL"> XXL</label>
+                </div>
+                <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+    
+            <!-- Box 6 -->
+            <div class="box">
+                <img src="prowomen2.jpg" alt="Item Image" class="item-image">
+                <h3>Muslcle mommy T-shirt</h3>
+                <p class="price">&#x20b9; 999/-</p>
+                <p class="rating">★★★☆☆</p>
+                <div class="size-options">
+                    <label><input type="radio" name="size6" value="S"> S</label>
+                    <label><input type="radio" name="size6" value="M"> M</label>
+                    <label><input type="radio" name="size6" value="L"> L</label>
+                    <label><input type="radio" name="size6" value="XL"> XL</label>
+                    <label><input type="radio" name="size6" value="XXL"> XXL</label>
+                </div>
+                <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+    
+            <!-- Box 7 -->
+            <div class="box">
+                <img src="prowomen7.jpg" alt="Item Image" class="item-image">
+                <h3>Blue Sports Bra and leggings</h3>
+                <p class="price">&#x20b9;2200/-</p>
+                <p class="rating">★★★☆☆</p>
+                <div class="size-options">
+                    <label><input type="radio" name="size7" value="S"> S</label>
+                    <label><input type="radio" name="size7" value="M"> M</label>
+                    <label><input type="radio" name="size7" value="L"> L</label>
+                    <label><input type="radio" name="size7" value="XL"> XL</label>
+                    <label><input type="radio" name="size7" value="XXL"> XXL</label>
+                </div>
+                <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+    
+            <!-- Box 8 -->
+            <div class="box">
+                <img src="prowomen8.jpg" alt="Item Image" class="item-image">
+                <h3>Grey billard Set</h3>
+                <p class="price">&#x20b9;1999/-</p>
+                <p class="rating">★★★☆☆</p>
+                <div class="size-options">
+                    <label><input type="radio" name="size8" value="S"> S</label>
+                    <label><input type="radio" name="size8" value="M"> M</label>
+                    <label><input type="radio" name="size8" value="L"> L</label>
+                    <label><input type="radio" name="size8" value="XL"> XL</label>
+                    <label><input type="radio" name="size8" value="XXL"> XXL</label>
+                </div>
+                <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+    
+            <!-- Box 9 -->
+            <div class="box">
+                <img src="prowomen9.jpg" alt="Item Image" class="item-image">
+                <h3>MKO sports bra</h3>
+                <p class="price">&#x20b9;29.99</p>
+                <p class="rating">★★★★☆</p>
+                <div class="size-options">
+                    <label><input type="radio" name="size9" value="S"> S</label>
+                    <label><input type="radio" name="size9" value="M"> M</label>
+                    <label><input type="radio" name="size9" value="L"> L</label>
+                    <label><input type="radio" name="size9" value="XL"> XL</label>
+                    <label><input type="radio" name="size9" value="XXL"> XXL</label>
+                </div>
+                <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+    
+            <!-- Box 10 -->
+            <div class="box">
+                <img src="prowomen10.jpg" alt="Item Image" class="item-image">
+                <h3>Supex GYM Set</h3>
+                <p class="price">&#x20b9;1900/-</p>
+                <p class="rating">★★★★☆</p>
+                <div class="size-options">
+                    <label><input type="radio" name="size10" value="S"> S</label>
+                    <label><input type="radio" name="size10" value="M"> M</label>
+                    <label><input type="radio" name="size10" value="L"> L</label>
+                    <label><input type="radio" name="size10" value="XL"> XL</label>
+                    <label><input type="radio" name="size10" value="XXL"> XXL</label>
+                </div>
+                <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="box">
+                <img src="displaywomen1.jpg" alt="Item Image" class="item-image">
+                <h3>Muscle mami oversized T-shirt</h3>
+                <p class="price">&#x20b9;620/-</p>
+                <p class="rating">★★★★☆</p>
+                <div class="size-options">
+                    <label><input type="radio" name="size10" value="S"> S</label>
+                    <label><input type="radio" name="size10" value="M"> M</label>
+                    <label><input type="radio" name="size10" value="L"> L</label>
+                    <label><input type="radio" name="size10" value="XL"> XL</label>
+                    <label><input type="radio" name="size10" value="XXL"> XXL</label>
+                </div>
+                <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+         
+              <!-- Box 12 -->
+              <div class="box">
+                
+                <img src="prowomen1.jpg" alt="Item Image" class="item-image">
+                <h3>Set of 5 Shorts </h3>
+                <p class="price">&#x20b9;2400/-</p>
+                <p class="rating">★★★★☆</p>
+                <div class="size-options">
+                    <label><input type="radio" name="size10" value="S"> S</label>
+                    <label><input type="radio" name="size10" value="M"> M</label>
+                    <label><input type="radio" name="size10" value="L"> L</label>
+                    <label><input type="radio" name="size10" value="XL"> XL</label>
+                    <label><input type="radio" name="size10" value="XXL"> XXL</label>
+                </div>
+                <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+             </div>
+    </section>
+    <div class="reviews-container ">
+        <h1>Reviews</h1>
+        <div class="reviews-container">
+            <div class="review">
+                <div class="review-header">
+                    <i class="fas fa-user-circle"></i> <!-- Person Profile Icon -->
+                    <h4>Misbah Ansari</h4> <!-- Reviewer Name -->
+                </div>
+                <div class="review-content">
+                    <h3>Excellent Gym Wear!</h3>
+                    <p><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                    <p>The quality of the gym clothes is outstanding. They fit perfectly and are very comfortable during workouts. The fabric is breathable and holds up well even after multiple washes. Highly recommend to anyone looking for reliable fitness apparel!</p>
+                </div>
+            </div>
+            <div class="review">
+                <div class="review-header">
+                    <i class="fas fa-user-circle"></i> <!-- Person Profile Icon -->
+                    <h4>Abdal Nafi</h4> <!-- Reviewer Name -->
+                </div>
+                <div class="review-content">
+                    <h3>Great Purchase Experience</h3>
+                    <p><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                    <p>I had a fantastic experience shopping for gym clothes. The website is easy to navigate, and the customer service was very helpful. My order arrived quickly, and the clothes are of excellent quality. I'll definitely be buying from here again!</p>
+                </div>
+            </div>
+            <div class="review">
+                <div class="review-header">
+                    <i class="fas fa-user-circle"></i> <!-- Person Profile Icon -->
+                    <h4>Javvad Khan</h4> <!-- Reviewer Name -->
+                </div>
+                <div class="review-content">
+                    <h3>Decent but Room for Improvement</h3>
+                    <p><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                    <p>The gym clothes are decent, but I found the sizing to be a bit off. They are comfortable enough, but the color options are quite limited. The delivery took a bit longer than expected. Overall, it's a good option but could use some improvements.</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <section id="aboutus">
+        <section class="about-us-container">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <div class="about-item">
+                    <i class="fas fa-dumbbell"></i> <!-- Icon -->
+                    <h3>Our Mission</h3>
+                    <p>We are committed to providing high-quality gym apparel that ensures comfort, style, and performance for fitness enthusiasts of all levels.</p>
+                </div>
+                <div class="about-item">
+                    <i class="fas fa-heartbeat"></i> <!-- Icon -->
+                    <h3>Why Choose Us</h3>
+                    <p>Our products are designed to meet the needs of athletes and casual gym-goers alike. With a focus on durability and design, our gym clothes will support you through every workout.</p>
+                </div>
+                <div class="about-item">
+                    <i class="fas fa-people-arrows"></i> <!-- Icon -->
+                    <h3>Our Community</h3>
+                    <p>Join a community of fitness lovers who share the same passion for health and wellness. We believe in building a positive environment where everyone can thrive.</p>
+                </div>
+            </div>
+        </section>
+        
+    </section>
+
+    <section id="contactus">
+        <section class="contact-us-container">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i> <!-- Phone Icon -->
+                    <a href="tel:+1234567890">Call us: +4 604 188 830</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i> <!-- Email Icon -->
+                    <a href="mailto:info@gymclothes.com">info@BeFit.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-instagram"></i> <!-- Instagram Icon -->
+                    <a href="https://www.instagram.com/yourprofile" target="_blank">Follow us on Instagram</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-facebook"></i> <!-- Facebook Icon -->
+                    <a href="https://www.facebook.com/yourprofile" target="_blank">Like us on Facebook</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-x-twitter"></i> <!-- X (Twitter) Icon -->
+                    <a href="https://x.com/yourprofile" target="_blank">Follow us on X (formerly Twitter)</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i> <!-- Address Icon -->
+                    <p>Vasai Fitness St, Gym City, GC 304/A</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i> <!-- Business Hours Icon -->
+                    <p>Mon-Fri: 9 AM - 6 PM</p>
+                </div>
+            </div>
+            <div class="contact-footer">
+                <p>&copy; 2005-2024 Be Fit Inc. All rights reserved.</p>
+            </div>
+        </section>
+        
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
